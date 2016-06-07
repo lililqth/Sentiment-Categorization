@@ -4,6 +4,8 @@ import math
 import nltk
 import string
 from string import maketrans
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 def removingStopWords(file):
     """ Removing the stop words and the "_" in a term

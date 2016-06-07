@@ -1,3 +1,4 @@
+# coding=gbk
 import os
 os.system("python 1_Clean.py review.train")
 os.system("python 2_Sentiment.py 1.cleaned")

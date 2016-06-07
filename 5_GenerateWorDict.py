@@ -1,5 +1,6 @@
 # coding=gbk
 import string
+import sys
 
 def words2Num(file):
     try:
@@ -31,4 +32,4 @@ def words2Num(file):
 
      
 if __name__=="__main__":
-    wordict,wordSet = words2Num("4.preprocess")
+    wordict,wordSet = words2Num(sys.argv[1])

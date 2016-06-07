@@ -1,7 +1,9 @@
 import os
 # sentiment.train
+
+os.system("python 5_GenerateWorDict.py 4.preprocess")
 os.system("python 6_TransWord2ID.py 4.preprocess sentiment.train")
-os.system("rm 4.preprocess")
+os.system("mv 4.preprocess preprocess")
 
 # TF.train
 # repeat preprocess

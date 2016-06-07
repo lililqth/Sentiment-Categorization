@@ -3,7 +3,6 @@ import sys
 import math
 import nltk
 import string
-from pattern.en import lemma
 from pattern.en import sentiment
 from string import maketrans
 
@@ -42,7 +41,7 @@ def RestoreWords(file):
 
             f.write(str(i) + " ")
             for k,v in wordict.items():
-                f.write(k + ":" + str(v) + " ")
+                f.write(str(k) + ":" + str(v) + " ")
             f.write(label)
             f.write("\n")
     finally:
